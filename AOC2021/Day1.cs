@@ -1,20 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AOC2021
+﻿namespace AOC2021
 {
-    internal static class Day1
+    public static class Day1
     {
-        static readonly string sampleInput = @"C:\Users\vdinesh\source\repos\AOC2021\AOC2021\Input\Day1_sample.txt";
-        static readonly string puzzleInput = @"C:\Users\vdinesh\source\repos\AOC2021\AOC2021\Input\Day1_puzzle.txt";
+        //static readonly string sampleInput = @"C:\Users\vdinesh\source\repos\AOC2021\AOC2021\Input\Day1_sample.txt";
+        //static readonly string puzzleInput = @"C:\Users\vdinesh\source\repos\AOC2021\AOC2021\Input\Day1_puzzle.txt";
 
-        public static int Part1()
+        public static int Part1(int day, string inputType)
         {
 
-            List<string> allLinesText = File.ReadAllLines(puzzleInput).ToList();
+            List<string> allLinesText = File.ReadAllLines(Utilities.GetInputPathFor(day, inputType)).ToList();
 
             int counter = 0;
             int temp = 0;
@@ -38,9 +32,9 @@ namespace AOC2021
             return counter;
         }
 
-        public static int Part2()
+        public static int Part2(int day, string inputType)
         {
-            List<int> allLinesText = File.ReadAllLines(puzzleInput).Select(int.Parse).ToList();
+            List<int> allLinesText = File.ReadAllLines(Utilities.GetInputPathFor(day, inputType)).Select(int.Parse).ToList();
 
             int counter = 0;
             int temp = 0;
