@@ -18,5 +18,6 @@ namespace AOC2021_TEST
             Assert.AreEqual(900, Day2.Part2("sample"));
             Assert.AreEqual(1568138742, Day2.Part2("puzzle"));
         }
+
     }
 }

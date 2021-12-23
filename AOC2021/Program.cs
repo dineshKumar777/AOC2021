@@ -11,4 +11,10 @@
 //Console.WriteLine(Day2.Part1("sample"));
 
 //Day2_part2
-Console.WriteLine(Day2.Part2("sample"));
+//Console.WriteLine(Day2.Part2("sample"));
+
+//Day3_part1
+//Console.WriteLine(Day3.Part1("puzzle"));
+
+//Day3_part2
+Console.WriteLine(Day3.Part2("puzzle"));
